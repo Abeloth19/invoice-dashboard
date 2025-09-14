@@ -1,5 +1,5 @@
-import { Bell, MessageCircle, ArrowLeft } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { ArrowBack } from '../icons/ArrowBack';
 import profileimage from "../assets/profileimage.png";
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
       isScrolled ? 'bg-white' : 'bg-[#e7cde6]'
     } md:relative md:bg-[#e7cde6]`}>
       <div className="relative flex items-center justify-center p-4 md:px-6 md:py-6">
-        <ArrowLeft className="absolute left-4 w-6 h-6 text-gray-800 md:hidden" />
+        <ArrowBack className="absolute left-4 w-3 h-5 text-gray-800" />
         <h1 className="text-lg font-semibold text-gray-900 md:text-2xl">Dashboard</h1>
         <div className="absolute right-4 w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden">
           <img 
@@ -27,13 +27,6 @@ const Header = () => {
             alt="Profile" 
             className="w-full h-full object-cover"
           />
-        </div>
-        <div className="absolute right-16 hidden md:flex items-center gap-4">
-          <div className="relative">
-            <Bell className="w-6 h-6 text-gray-600 hover:text-purple-600 transition-colors cursor-pointer" />
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></div>
-          </div>
-          <MessageCircle className="w-6 h-6 text-gray-600 hover:text-purple-600 transition-colors cursor-pointer" />
         </div>
       </div>
       <div className="md:hidden">
