@@ -29,7 +29,7 @@ const InvoiceList = () => {
 
 
   return (
-    <div className="px-4 md:px-8">
+    <div className="px-4 md:px-8 mt-6">
       <div className="space-y-4">
         <div 
           className="flex items-center justify-between cursor-pointer"

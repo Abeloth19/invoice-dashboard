@@ -1,4 +1,5 @@
-import chartImage from '../assets/chart.png';
+import IncomeChart from './IncomeChart';
+// import chartImage from '../assets/chart.png';
 
 const ChartSection = () => {
   return (
@@ -13,6 +14,9 @@ const ChartSection = () => {
           Your monthly income and growth for the last 6 months.
         </p>
 
+        <IncomeChart />
+        
+        {/*
         <div className="flex justify-center">
           <img
             src={chartImage}
@@ -20,6 +24,7 @@ const ChartSection = () => {
             className="w-full h-auto object-contain max-h-[400px]"
           />
         </div>
+        */}
       </div>
     </div>
   );
