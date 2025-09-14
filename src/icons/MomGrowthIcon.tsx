@@ -2,7 +2,7 @@ interface MomGrowthIconProps {
   className?: string;
 }
 
-export const MomGrowthIcon = ({ className = "w-[32px] h-[10px]" }: MomGrowthIconProps) => {
+export const MomGrowthIcon = ({ className = "w-[24px] h-[10px]" }: MomGrowthIconProps) => {
   return (
     <svg 
       width="32" 

@@ -12,16 +12,16 @@ const data = [
 
 const IncomeChart = () => {
   return (
-    <div className="w-full">
-      <div className="h-64">
-        <ResponsiveContainer width="100%" height="100%">
+    <div className="w-full focus:outline-none">
+      <div className="h-64 [&_*:focus]:outline-none [&_*]:focus:outline-none">
+        <ResponsiveContainer width="100%" height="100%" style={{ outline: 'none' }}>
           <ComposedChart
             data={data}
             margin={{
               top: 20,
-              right: 30,
+              right: 5,
               bottom: 10,
-              left: 30,
+              left: 5,
             }}
           >
             <XAxis 
@@ -81,7 +81,7 @@ const IncomeChart = () => {
         </ResponsiveContainer>
       </div>
       
-      <div className="flex items-center justify-center gap-6 mt-1">
+      <div className="flex items-center justify-center gap-6 mt-0">
         <div className="flex items-center gap-2">
           <div className="w-4 h-3 bg-[#8B5CF6] rounded-sm"></div>
           <span className="text-xs font-roboto font-medium text-[#8B5CF6]">income</span>
