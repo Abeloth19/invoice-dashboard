@@ -40,7 +40,7 @@ const InvoiceList = () => {
         </div>
         
         {isOpen && (
-          <div className="space-y-1">
+          <div className="flex flex-col gap-3 mt-3">
             {invoices.map((invoice) => (
               <div 
                 key={invoice.id} 
